@@ -1,362 +1,491 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Victor Alves</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="/assets/favicon.ico" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="index.js"></script>
-    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-    </script>
+    <script
+      src="https://kit.fontawesome.com/c8e4d183c2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
     <script type="text/javascript">
-        (function () {
-            emailjs.init("YIVHwcnxzWc5rEOtr");
-        })();
+      (function () {
+        emailjs.init("YIVHwcnxzWc5rEOtr");
+      })();
     </script>
-</head>
+  </head>
 
-<body>
+  <body>
     <section id="landing-page" onmousemove="moveBackground(event)">
-        <div data-aos="fade-down"
+      <div
+        data-aos="fade-down"
         data-aos-duration="1000"
         data-aos-delay="800"
-        data-aos-easing="ease-in-out" data-aos-once="true">
+        data-aos-easing="ease-in-out"
+        data-aos-once="true"
+      >
         <nav>
-            <figure>
-                <img id="personal-logo" src="./assets/Personal Logo.png" alt="">
-            </figure>
-            <ul class="nav__link--list">
-                <li class="nav__link" onclick="toggleModal()">
-                    <a href="#" class="
-                      nav__link--anchor
-                      link__hover-effect
-                      link__hover-effect--black
-                    ">About</a>
-                </li>
-                <li class="nav__link">
-                    <a href="#projects" class="
-                      nav__link--anchor
-                      link__hover-effect
-                      link__hover-effect--black
-                    ">Projects</a>
-                </li>
-                <li class="nav__link" onclick="toggleModal()">
-                    <a href="#" class="
-                      nav__link--anchor
-                      link__hover-effect
-                      link__hover-effect--black
-                    ">Contact</a>
-                </li>
-                <li class="nav__link click" onclick="toggleContrast()">
-                    <a href="#" class="
-                      nav__contrast
-                      nav__link--anchor
-                    "><i class="fas fa-adjust"></i></a>
-                </li>
-            </ul>
+          <figure>
+            <img id="personal-logo" src="./assets/Personal Logo.png" alt="" />
+          </figure>
+          <ul class="nav__link--list">
+            <li class="nav__link" onclick="toggleModal()">
+              <a
+                href="#"
+                class="nav__link--anchor link__hover-effect link__hover-effect--black"
+                >About</a
+              >
+            </li>
+            <li class="nav__link">
+              <a
+                href="#projects"
+                class="nav__link--anchor link__hover-effect link__hover-effect--black"
+                >Projects</a
+              >
+            </li>
+            <li class="nav__link" onclick="toggleModal()">
+              <a
+                href="#"
+                class="nav__link--anchor link__hover-effect link__hover-effect--black"
+                >Contact</a
+              >
+            </li>
+            <li class="nav__link click" onclick="toggleContrast()">
+              <a href="#" class="nav__contrast nav__link--anchor"
+                ><i class="fas fa-adjust"></i
+              ></a>
+            </li>
+          </ul>
         </nav>
-        </div>
-        <header class="header">
-            <div class="header__content">
-                <div data-aos="fade-up"
-                data-aos-duration="500"
-                data-aos-delay="200" data-aos-once="true"> 
-                <h1 class="title">Hey,</h1>
-                <h1 class="title-purple">I'm Victor.</h1>
-            </div>
-            <div data-aos="fade-up"
-                data-aos-duration="500"
-                data-aos-delay="500"
-                data-aos-easing="ease-in-out" data-aos-once="true">
-                <p class="header__para">I'm a <b class="purple">Frontend Developer</b> with a strong passion for
-                    building web applications with great user experiences.
-                    <br>
-                    Here's a bit more <b class="purple click header-btn" onclick="toggleModal()">about me.</b>
-                </p>
-            </div>
-            <div data-aos="fade-in"
+      </div>
+      <header class="header">
+        <div class="header__content">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="500"
+            data-aos-delay="200"
+            data-aos-once="true"
+          >
+            <h1 class="title">Hey,</h1>
+            <h1 class="title-purple">I'm Victor.</h1>
+          </div>
+          <div
+            data-aos="fade-up"
+            data-aos-duration="500"
+            data-aos-delay="500"
+            data-aos-easing="ease-in-out"
+            data-aos-once="true"
+          >
+            <p class="header__para">
+              I'm a <b class="purple">Frontend Developer</b> with a strong
+              passion for building web applications with great user experiences.
+              <br />
+              Here's a bit more
+              <b class="purple click header-btn" onclick="toggleModal()"
+                >about me.</b
+              >
+            </p>
+          </div>
+          <div
+            data-aos="fade-in"
             data-aos-duration="1000"
             data-aos-delay="800"
-            data-aos-easing="ease-in-out" data-aos-once="true">
-                <div class="social__list">
-                    <a href="https://www.linkedin.com/in/victor-alves-68538527b/" target="_blank" class="social__link click">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="https://github.com/victor-alvescv" target="_blank" class="social__link click">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="./assets/Resume.pdf" target="_blank" class="social__link click">
-                        <i class="fas fa-file-pdf"></i>
-                    </a>
-                </div>
+            data-aos-easing="ease-in-out"
+            data-aos-once="true"
+          >
+            <div class="social__list">
+              <a
+                href="https://www.linkedin.com/in/victor-alves-68538527b/"
+                target="_blank"
+                class="social__link click"
+              >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a
+                href="https://github.com/victor-alvescv"
+                target="_blank"
+                class="social__link click"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+              <a
+                href="./assets/Resume.pdf"
+                target="_blank"
+                class="social__link click"
+              >
+                <i class="fas fa-file-pdf"></i>
+              </a>
             </div>
-            </div>
-        </header>
-        <a href="#">
-            <button class="mail__btn click" onclick="toggleModal()">
-                <i class="fas fa-envelope"></i>
-            </button>
-        </a>
-        <a href="#projects" class="scroll">
-            <div class="scroll__icon click"></div>
-        </a>
-        <div class="modal">
-            <div class="modal__half modal__about">
-                <h3 class="modal__title modal__title--about">Here's a bit about me.</h3>
-                <h4 class="modal__sub-title modal__sub-title--about">Frontend Software Engineer</h4>
-                <p class="modal__para">I'm a 18 year-old Brazilian <b class="purple">frontend software engineer</b> with
-                    a strong passion for developing websites with great <b class="purple">user experiences.</b>
-                    <br>
-                    I currently work on extremely difficult engineering problems and learn the <b
-                        class="purple">solution</b> for it problems with a great and <b class="purple">talented group of
-                        software engineers</b> every day.
-                </p>
-                <div class="modal__languages">
-                    <figure class="modal__language">
-                        <img class="modal__language--img"
-                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
-                            alt="">
-                        <span class="language__name">HTML</span>
-                    </figure>
-                    <figure class="modal__language">
-                        <img class="modal__language--img"
-                            src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png" alt="">
-                        <span class="language__name">CSS</span>
-                    </figure>
-                    <figure class="modal__language">
-                        <img class="modal__language--img"
-                            src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png" alt="">
-                        <span class="language__name">JavaScript</span>
-                    </figure>
-                    <figure class="modal__language">
-                        <img class="modal__language--img"
-                            src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png" alt="">
-                        <span class="language__name">React</span>
-                    </figure>
-                    <figure class="modal__language">
-                        <img class="modal__language--img"
-                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Typescript.svg/64px-Typescript.svg.png" alt="">
-                        <span class="language__name">TypeScript</span>
-                    </figure>
-                    <figure class="modal__language">
-                        <img class="modal__language--img redux_style"
-                            src="assets/redux.png">
-                        <span class="language__name">Redux</span>
-                    </figure>
-                    <figure class="modal__language">
-                        <img class="modal__language--img firebase_style"
-                            src="assets/firebase.png" alt="">
-                        <span class="language__name">Firebase</span>
-                    </figure>
-                    <figure class="modal__language">
-                        <img class="modal__language--img"
-                            src="https://static-00.iconduck.com/assets.00/next-js-icon-512x512-zuauazrk.png" alt="">
-                        <span class="language__name">NextJs</span>
-                    </figure>
-                </div>
-            </div>
-            <div class="modal__half modal__contact">
-                <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
-                <h3 class="modal__title modal__title--contact">
-                    Let's have a chat!
-                </h3>
-                <h4 class="modal__sub-title modal__sub-title--contact">
-                    I'm currently open to new opportunities.
-                </h4>
-                <form id="contact__form" onsubmit="contact(event)">
-                    <div class="form__item">
-                        <label class="form__item--label">Name</label>
-                        <input class="input" name="user_name" type="text"></input>
-                    </div>
-                    <div class="form__item">
-                        <label class="form__item--label">Email</label>
-                        <input class="input" name="user_email" type="email"></input>
-                    </div>
-                    <div class="form__item">
-                        <label class="form__item--label">Message</label>
-                        <textarea class="input" name="message" type="text"></textarea>
-                    </div>
-                    <button id="contact__submit" class="form__submit">
-                        Send it my way
-                    </button>
-                </form>
-                <div class="modal__overlay modal__overlay--loading">
-                    <i class="fas fa-spinner"></i>
-                </div>
-                <div class="modal__overlay modal__overlay--sucess">
-                    Thanks for the message! Looking forward to speak with you soon!
-                </div>
-            </div>
+          </div>
         </div>
-        <img src="./assets/semi circle.svg" class="shape shape--0">
-        <img src="./assets/circle.svg" class="shape shape--1">
-        <img src="./assets/squiggly.svg" class="shape shape--2">
-        <img src="./assets/circle.svg" class="shape shape--3">
-        <img src="./assets/triangle.svg" class="shape shape--4">
-        <img src="./assets/circle.svg" class="shape shape--5">
-        <img src="./assets/squiggly.svg" class="shape shape--6">
-        <img src="./assets/circle.svg" class="shape shape--7">
-        <img src="./assets/semi circle.svg" class="shape shape--8">
+      </header>
+      <a href="#">
+        <div
+        data-aos="fade-in"
+        data-aos-duration="500"
+        data-aos-delay="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-once="true"
+      >
+        <button class="mail__btn click" onclick="toggleModal()">
+          <i class="fas fa-envelope"></i>
+        </button>
+      </div>
+      </a>
+      <div
+        data-aos="fade-in"
+        data-aos-duration="1000"
+        data-aos-delay="800"
+        data-aos-easing="ease-in-out"
+        data-aos-once="true"
+      >
+        <a href="#projects" class="scroll">
+          <div class="scroll__icon click"></div>
+        </a>
+      </div>
+      <div class="modal">
+        <div class="modal__half modal__about">
+          <h3 class="modal__title modal__title--about">
+            Here's a bit about me.
+          </h3>
+          <h4 class="modal__sub-title modal__sub-title--about">
+            Frontend Software Engineer
+          </h4>
+          <p class="modal__para">
+            I'm a 18 year-old Brazilian
+            <b class="purple">frontend software engineer</b> with a strong
+            passion for developing websites with great
+            <b class="purple">user experiences.</b>
+            <br />
+            I currently work on extremely difficult engineering problems and
+            learn the <b class="purple">solution</b> for it problems with a
+            great and
+            <b class="purple">talented group of software engineers</b> every
+            day.
+          </p>
+          <div class="modal__languages">
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
+                alt=""
+              />
+              <span class="language__name">HTML</span>
+            </figure>
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png"
+                alt=""
+              />
+              <span class="language__name">CSS</span>
+            </figure>
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png"
+                alt=""
+              />
+              <span class="language__name">JavaScript</span>
+            </figure>
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png"
+                alt=""
+              />
+              <span class="language__name">React</span>
+            </figure>
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Typescript.svg/64px-Typescript.svg.png"
+                alt=""
+              />
+              <span class="language__name">TypeScript</span>
+            </figure>
+            <figure class="modal__language">
+              <img
+                class="modal__language--img redux_style"
+                src="assets/redux.png"
+              />
+              <span class="language__name">Redux</span>
+            </figure>
+            <figure class="modal__language">
+              <img
+                class="modal__language--img firebase_style"
+                src="assets/firebase.png"
+                alt=""
+              />
+              <span class="language__name">Firebase</span>
+            </figure>
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="https://static-00.iconduck.com/assets.00/next-js-icon-512x512-zuauazrk.png"
+                alt=""
+              />
+              <span class="language__name">NextJs</span>
+            </figure>
+          </div>
+        </div>
+        <div class="modal__half modal__contact">
+          <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
+          <h3 class="modal__title modal__title--contact">Let's have a chat!</h3>
+          <h4 class="modal__sub-title modal__sub-title--contact">
+            I'm currently open to new opportunities.
+          </h4>
+          <form id="contact__form" onsubmit="contact(event)">
+            <div class="form__item">
+              <label class="form__item--label">Name</label>
+              <input class="input" name="user_name" type="text" />
+            </div>
+            <div class="form__item">
+              <label class="form__item--label">Email</label>
+              <input class="input" name="user_email" type="email" />
+            </div>
+            <div class="form__item">
+              <label class="form__item--label">Message</label>
+              <textarea class="input" name="message" type="text"></textarea>
+            </div>
+            <button id="contact__submit" class="form__submit">
+              Send it my way
+            </button>
+          </form>
+          <div class="modal__overlay modal__overlay--loading">
+            <i class="fas fa-spinner"></i>
+          </div>
+          <div class="modal__overlay modal__overlay--sucess">
+            Thanks for the message! Looking forward to speak with you soon!
+          </div>
+        </div>
+      </div>
+      <img src="./assets/semi circle.svg" class="shape shape--0" />
+      <img src="./assets/circle.svg" class="shape shape--1" />
+      <img src="./assets/squiggly.svg" class="shape shape--2" />
+      <img src="./assets/circle.svg" class="shape shape--3" />
+      <img src="./assets/triangle.svg" class="shape shape--4" />
+      <img src="./assets/circle.svg" class="shape shape--5" />
+      <img src="./assets/squiggly.svg" class="shape shape--6" />
+      <img src="./assets/circle.svg" class="shape shape--7" />
+      <img src="./assets/semi circle.svg" class="shape shape--8" />
     </section>
     <section id="projects">
-        <div class="container">
-           <div class="row">
-            <div data-aos="fade-up"
+      <div class="container">
+        <div class="row">
+          <div
+            data-aos="fade-up"
             data-aos-duration="500"
-            data-aos-delay="200" data-aos-once="true">
+            data-aos-delay="200"
+            data-aos-once="true"
+          >
             <h1 class="section__title">
-                Here are some of my <span class="purple">projects</span>
+              Here are some of my <span class="purple">projects</span>
             </h1>
-            </div>
-            <div data-aos="fade-left"
+          </div>
+          <div
+            data-aos="fade-left"
             data-aos-duration="500"
-            data-aos-delay="200" data-aos-once="true">
+            data-aos-delay="200"
+            data-aos-once="true"
+          >
             <ul class="project__list">
-                <li class="project">
-                    <div class="project__wrapper">
-                        <img src="./assets/Ultraverse.png" class="project__img" alt="">
-                        <div class="project__wrapper--bg"></div>
-                        <div class="project__description">
-                            <h3 class="project__description--title">
-                                Ultraverse
-                            </h3>
-                            <h4 class="project__description--sub-title">
-                                Html, CSS, JavaScript, React, Git
-                            </h4>
-                            <p class="project__description--para">
-                                Project made using only the basics of frontend, with a small details of JavaScript;
-                            </p>
-                            <div class="project__description--links">
-                                <a href="https://github.com/victor-alvescv/victor-internship" target="_blank" class="project__description--link">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                                <a href="https://victor-internship.vercel.app/" target="_blank" class="project__description--link">
-                                    <i class="fas fa-link"></i>
-                                </a>
-                            </div>
-                        </div>
-                        </div>
+              <li class="project">
+                <div class="project__wrapper">
+                  <img
+                    src="./assets/Ultraverse.png"
+                    class="project__img"
+                    alt=""
+                  />
+                  <div class="project__wrapper--bg"></div>
+                  <div class="project__description">
+                    <h3 class="project__description--title">Ultraverse</h3>
+                    <h4 class="project__description--sub-title">
+                      Html, CSS, JavaScript, React, Git
+                    </h4>
+                    <p class="project__description--para">
+                      The best project by myself. A fully responsive website
+                      using important languages and technologies for a frontend
+                      web developer. With an API I managed to add a couple of
+                      features that I consider extremely necessary for a better
+                      user experience, like skeletons loading states,
+                      animations, reusable components and many more! Inside the
+                      github page you can see that i worked in this project with
+                      branches, simulating a working environment, check it out!
+                    </p>
+                    <div class="project__description--links">
+                      <a
+                        href="https://github.com/victor-alvescv/victor-internship"
+                        target="_blank"
+                        class="project__description--link"
+                      >
+                        <i class="fab fa-github"></i>
+                      </a>
+                      <a
+                        href="https://victor-internship.vercel.app/"
+                        target="_blank"
+                        class="project__description--link"
+                      >
+                        <i class="fas fa-link"></i>
+                      </a>
                     </div>
-                </li>
+                  </div>
+                </div>
+              </li>
             </ul>
-            <div data-aos="fade-right"
+          </div>
+          <div
+            data-aos="fade-right"
             data-aos-duration="500"
-            data-aos-delay="200" data-aos-once="true">
+            data-aos-delay="200"
+            data-aos-once="true"
+          >
             <ul class="project__list">
-                <li class="project">
-                    <div class="project__wrapper">
-                        <img src="./assets/movieplus+.png" class="project__img" alt="">
-                        <div class="project__wrapper--bg"></div>
-                        <div class="project__description">
-                            <h3 class="project__description--title">
-                                Movieplus+
-                            </h3>
-                            <h4 class="project__description--sub-title">
-                                Html, CSS, JavaScript, React
-                            </h4>
-                            <p class="project__description--para">
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia reiciendis, 
-                                sequi recusandae exercitationem odio laboriosam eius maxime eaque id suscipit 
-                                soluta repudiandae vitae eligendi? Ratione minima optio doloribus nulla illum?
-                            </p>
-                            <div class="project__description--links">
-                                <a href="https://github.com/victor-alvescv/Movieplus-site" target="_blank" class="project__description--link">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                                <a href="https://movieplus-site.vercel.app/" target="_blank" class="project__description--link">
-                                    <i class="fas fa-link"></i>
-                                </a>
-                            </div>
-                        </div>
+              <li class="project">
+                <div class="project__wrapper">
+                  <img
+                    src="./assets/movieplus+.png"
+                    class="project__img"
+                    alt=""
+                  />
+                  <div class="project__wrapper--bg"></div>
+                  <div class="project__description">
+                    <h3 class="project__description--title">Movieplus+</h3>
+                    <h4 class="project__description--sub-title">
+                      Html, CSS, JavaScript, React
+                    </h4>
+                    <p class="project__description--para">
+                      A E-Commerce of movies, using a created database, with
+                      self-made design, animations and many more >features, one
+                      of them being the cart page. Using react I managed to make
+                      a fully responsive web app creating the best user
+                      experience in all ways. If interested check the website or
+                      the github page for more details!
+                    </p>
+                    <div class="project__description--links">
+                      <a
+                        href="https://github.com/victor-alvescv/Movieplus-site"
+                        target="_blank"
+                        class="project__description--link"
+                      >
+                        <i class="fab fa-github"></i>
+                      </a>
+                      <a
+                        href="https://movieplus-site.vercel.app/"
+                        target="_blank"
+                        class="project__description--link"
+                      >
+                        <i class="fas fa-link"></i>
+                      </a>
                     </div>
-                    </div>
-                </li>
+                  </div>
+                </div>
+              </li>
             </ul>
-            <div data-aos="fade-left"
+          </div>
+          <div
+            data-aos="fade-left"
             data-aos-duration="500"
-            data-aos-delay="200" data-aos-once="true">
+            data-aos-delay="200"
+            data-aos-once="true"
+          >
             <ul class="project__list">
-                <li class="project">
-                    <div class="project__wrapper">
-                        <img src="./assets/treact.png" class="project__img" alt="">
-                        <div class="project__wrapper--bg"></div>
-                        <div class="project__description">
-                            <h3 class="project__description--title">
-                                Treact
-                            </h3>
-                            <h4 class="project__description--sub-title">
-                                Html, CSS, JavaScript
-                            </h4>
-                            <p class="project__description--para">
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia reiciendis, 
-                                sequi recusandae exercitationem odio laboriosam eius maxime eaque id suscipit 
-                                soluta repudiandae vitae eligendi? Ratione minima optio doloribus nulla illum?
-                            </p>
-                            <div class="project__description--links">
-                                <a href="https://github.com/victor-alvescv/Treact-site" target="_blank" class="project__description--link">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                                <a href="https://treact-site-413.vercel.app/" target="_blank" class="project__description--link">
-                                    <i class="fas fa-link"></i>
-                                </a>
-                            </div>
-                        </div>
-                        </div>
+              <li class="project">
+                <div class="project__wrapper">
+                  <img src="./assets/treact.png" class="project__img" alt="" />
+                  <div class="project__wrapper--bg"></div>
+                  <div class="project__description">
+                    <h3 class="project__description--title">Treact</h3>
+                    <h4 class="project__description--sub-title">
+                      Html, CSS, JavaScript
+                    </h4>
+                    <p class="project__description--para">
+                      This was a very simple project, using only the tree bases
+                      of frontend coding. An extensive website with light
+                      animations and long html code, using mostly css, is a
+                      project rich in design. Check out the links down below and
+                      check it for yourself!
+                    </p>
+                    <div class="project__description--links">
+                      <a
+                        href="https://github.com/victor-alvescv/Treact-site"
+                        target="_blank"
+                        class="project__description--link"
+                      >
+                        <i class="fab fa-github"></i>
+                      </a>
+                      <a
+                        href="https://treact-site-413.vercel.app/"
+                        target="_blank"
+                        class="project__description--link"
+                      >
+                        <i class="fas fa-link"></i>
+                      </a>
                     </div>
-                </li>
+                  </div>
+                </div>
+              </li>
             </ul>
-           </div>
+          </div>
         </div>
+      </div>
     </section>
     <footer>
-        <div class="container">
-            <div class="row footer__row">
-                <figure>
-                    <img class="footer__logo--img" src="./assets/Personal Logo.png" alt="">
-                </figure>
-                <div class="footer__social--list">
-                    <a href="https://github.com/victor-alvescv" target="_blank" class="
-                footer__social--link
-                link__hover-effect
-                link__hover-effect--white
-                ">
-                        Github
-                    </a>
-                    <a href="https://www.linkedin.com/in/victor-alves-68538527b/" target="_blank" class="
-                footer__social--link
-                link__hover-effect
-                link__hover-effect--white
-                ">
-                        LinkedIn
-                    </a>
-                    <a href="#" onclick="toggleModal()" class="
-                footer__social--link
-                link__hover-effect
-                link__hover-effect--white
-                ">
-                        Contact
-                    </a>
-                    <a href="./assets/Resume.pdf" target="_blank" class="
-                footer__social--link
-                link__hover-effect
-                link__hover-effect--white
-                ">
-                        Resume
-                    </a>
-                </div>
-                <div class="footer__copyright">Copyright © Victor Alves 2023</div>
-            </div>
+      <div class="container">
+        <div class="row footer__row">
+          <figure>
+            <img
+              class="footer__logo--img"
+              src="./assets/Personal Logo.png"
+              alt=""
+            />
+          </figure>
+          <div class="footer__social--list">
+            <a
+              href="https://github.com/victor-alvescv"
+              target="_blank"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+            >
+              Github
+            </a>
+            <a
+              href="https://www.linkedin.com/in/victor-alves-68538527b/"
+              target="_blank"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+            >
+              LinkedIn
+            </a>
+            <a
+              href="#"
+              onclick="toggleModal()"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+            >
+              Contact
+            </a>
+            <a
+              href="./assets/Resume.pdf"
+              target="_blank"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+            >
+              Resume
+            </a>
+          </div>
+          <div class="footer__copyright">Copyright © Victor Alves 2023</div>
         </div>
+      </div>
     </footer>
-</body>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
-
+  </body>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </html>

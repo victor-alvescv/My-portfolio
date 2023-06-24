@@ -677,6 +677,11 @@ footer {
     font-size: 28px;
   }
 
+  .footer__logo--img {
+    width: 120px;
+    height: 60px;
+}
+
   .footer__copyright {
     font-size: 16px;
   }
@@ -696,6 +701,29 @@ footer {
   }
   .modal__half {
     width: 100%;
+  }
+
+  .header__para {
+    font-size: 16px;
+  }
+  .nav__link:first-child {
+    display: none;
+  }
+  .project__description--para {
+    display: none;
+  }
+  .project__description {
+    left: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    max-width: initial;
+  }
+  .project__description--sub-title {
+    margin-bottom: 8px;
+  }
+  .modal__half {
+    padding: 40px;
   }
 }
 
@@ -723,6 +751,10 @@ footer {
     font-size: 12px;
   }
 
+  .footer__social--link {
+    font-size: 12px;
+  }
+
   .header__para {
     font-size: 16px;
   }
@@ -744,4 +776,42 @@ footer {
   .modal__half {
     padding: 40px;
   }
+}
+
+@media (max-height: 750px) {
+   .title {
+    font-size: 80px;
+   }
+
+   .title-purple {
+    font-size: 80px;
+   }
+
+   .header__para {
+    font-size: 20px;
+   }
+
+   .header__content {
+    margin-top: 50px;
+   }
+
+}
+
+@media (max-height: 500px) {
+  .title {
+   font-size: 52px;
+  }
+
+  .title-purple {
+   font-size: 52px;
+  }
+
+  .header__para {
+   font-size: 14px;
+  }
+
+  .header__content {
+   margin-top: 50px;
+  }
+
 }
