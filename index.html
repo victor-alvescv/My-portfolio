@@ -130,16 +130,16 @@
       </header>
       <a href="#">
         <div
-        data-aos="fade-in"
-        data-aos-duration="500"
-        data-aos-delay="1000"
-        data-aos-easing="ease-in-out"
-        data-aos-once="true"
-      >
-        <button class="mail__btn click" onclick="toggleModal()">
-          <i class="fas fa-envelope"></i>
-        </button>
-      </div>
+          data-aos="fade-in"
+          data-aos-duration="500"
+          data-aos-delay="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-once="true"
+        >
+          <button class="mail__btn click" onclick="toggleModal()">
+            <i class="fas fa-envelope"></i>
+          </button>
+        </div>
       </a>
       <div
         data-aos="fade-in"
@@ -365,11 +365,18 @@
                     </h4>
                     <p class="project__description--para">
                       A E-Commerce of movies, using a created database, with
-                      self-made design, animations and many more >features, one
-                      of them being the cart page. Using react I managed to make
-                      a fully responsive web app creating the best user
-                      experience in all ways. If interested check the website or
-                      the github page for more details!
+                      self-made design, animations and many more
+                      <span onclick="readMore()" class="readmore-btn"
+                        >Read More...</span
+                      ><span class="readmore-text"
+                        >features, one of them being the cart page. Using reactI
+                        managed to make a fully responsive web app creating the
+                        best user experience in all ways. If interested check
+                        the website or the github page for more details!</span
+                      >
+                      <span onclick="readLess()" class="readless-btn"
+                        >Read Less...</span
+                      >
                     </p>
                     <div class="project__description--links">
                       <a
@@ -410,10 +417,17 @@
                     </h4>
                     <p class="project__description--para">
                       This was a very simple project, using only the tree bases
-                      of frontend coding. An extensive website with light
-                      animations and long html code, using mostly css, is a
-                      project rich in design. Check out the links down below and
-                      check it for yourself!
+                      of frontend coding. An extensive website
+                      <span onclick="readMore()" class="readmore-btn"
+                        >Read More...</span
+                      ><span class="readmore-text"
+                        >with light animations and long html code, using mostly
+                        css, is a project rich in design. Check out the links
+                        down below and check it for yourself!</span
+                      >
+                      <span onclick="readLess()" class="readless-btn"
+                        >Read Less...</span
+                      >
                     </p>
                     <div class="project__description--links">
                       <a

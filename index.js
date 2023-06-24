@@ -58,3 +58,21 @@ function toggleModal() {
   isModalOpen = true;
   document.body.classList += " modal--open";
 }
+
+function readMore() {
+ const readmore = document.querySelector('.readmore-text')
+ const readmorebtn = document.querySelector('.readmore-btn')
+ const readless = document.querySelector('.readless-btn')
+ readmore.style.display="inline"
+ readmorebtn.style.display="none"
+ readless.style.display="inline"
+}
+
+ function readLess() {
+  const readmore = document.querySelector('.readmore-text')
+ const readmorebtn = document.querySelector('.readmore-btn')
+ const readless = document.querySelector('.readless-btn')
+ readmore.style.display="none"
+ readmorebtn.style.display="inline"
+ readless.style.display="none"
+}
