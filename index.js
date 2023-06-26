@@ -60,19 +60,55 @@ function toggleModal() {
 }
 
 function readMore() {
- const readmore = document.querySelector('.readmore-text')
- const readmorebtn = document.querySelector('.readmore-btn')
- const readless = document.querySelector('.readless-btn')
- readmore.style.display="inline"
- readmorebtn.style.display="none"
- readless.style.display="inline"
+   let readmorebtn = document.querySelector('.readmore-btn')
+   let readmoretext = document.querySelector('.readmore-text')
+   let readlessbtn = document.querySelector('.readless-btn')
+   readmorebtn.style.display = 'none';
+   readmoretext.style.display = 'inline';
+   readlessbtn.style.display = 'inline';
 }
 
- function readLess() {
-  const readmore = document.querySelector('.readmore-text')
- const readmorebtn = document.querySelector('.readmore-btn')
- const readless = document.querySelector('.readless-btn')
- readmore.style.display="none"
- readmorebtn.style.display="inline"
- readless.style.display="none"
+function readLess() {
+  let readmorebtn = document.querySelector('.readmore-btn')
+  let readmoretext = document.querySelector('.readmore-text')
+  let readlessbtn = document.querySelector('.readless-btn')
+  readmorebtn.style.display = 'inline';
+  readmoretext.style.display = 'none';
+  readlessbtn.style.display = 'none';
+}
+
+function readMoreMovie() {
+  let readmorebtnmovie = document.querySelector('.readmore-btn-movie')
+  let readmoretextmovie = document.querySelector('.readmore-text-movie')
+  let readlessbtnmovie = document.querySelector('.readless-btn-movie')
+  readmorebtnmovie.style.display = 'none';
+  readmoretextmovie.style.display = 'inline';
+  readlessbtnmovie.style.display = 'inline';
+}
+
+function readLessMovie() {
+  let readmorebtnmovie = document.querySelector('.readmore-btn-movie')
+  let readmoretextmovie = document.querySelector('.readmore-text-movie')
+  let readlessbtnmovie = document.querySelector('.readless-btn-movie')
+  readmorebtnmovie.style.display = 'inline';
+  readmoretextmovie.style.display = 'none';
+  readlessbtnmovie.style.display = 'none';
+}
+
+function readMoreTreact() {
+  let readmorebtntreact = document.querySelector('.readmore-btn-treact')
+  let readmoretexttreact = document.querySelector('.readmore-text-treact')
+  let readlessbtntreact = document.querySelector('.readless-btn-treact')
+  readmorebtntreact.style.display = 'none';
+  readmoretexttreact.style.display = 'inline';
+  readlessbtntreact.style.display = 'inline';
+}
+
+function readLessTreact() {
+  let readmorebtntreact = document.querySelector('.readmore-btn-treact')
+  let readmoretexttreact = document.querySelector('.readmore-text-treact')
+  let readlessbtntreact = document.querySelector('.readless-btn-treact')
+  readmorebtntreact.style.display = 'inline';
+  readmoretexttreact.style.display = 'none';
+  readlessbtntreact.style.display = 'none';
 }

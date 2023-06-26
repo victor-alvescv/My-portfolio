@@ -833,10 +833,74 @@ footer {
 .readless-btn {
   font-weight: bold;
   cursor: pointer;
-  display: none;
   transition: all 300ms ease;
 }
 
 .readless-btn:hover {
+  opacity: 70%
+}
+
+/* ---------------------- */
+
+.readless-btn-movie {
+  font-weight: bold;
+  cursor: pointer;
+  display: none;
+  transition: all 300ms ease;
+}
+
+.readless-btn-movie:hover {
+  opacity: 70%
+}
+
+.readmore-text-movie {
+  display: none;
+}
+
+.readmore-btn-movie {
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+
+.readmore-btn-movie:hover {
+  opacity: 70%
+}
+
+/* ---------------------- */
+
+.readless-btn-treact {
+  font-weight: bold;
+  cursor: pointer;
+  display: none;
+  transition: all 300ms ease;
+}
+
+.readless-btn-treact:hover {
+  opacity: 70%
+}
+
+.readmore-text-treact {
+  display: none;
+}
+
+.readmore-btn-treact {
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+
+.readmore-btn-treact:hover {
+  opacity: 70%
+}
+
+.readless-btn-treact {
+  font-weight: bold;
+  cursor: pointer;
+  display: none;
+  transition: all 300ms ease;
+}
+
+.readless-btn-treact:hover {
   opacity: 70%
 }
