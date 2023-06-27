@@ -834,6 +834,7 @@ footer {
   font-weight: bold;
   cursor: pointer;
   transition: all 300ms ease;
+  display: none;
 }
 
 .readless-btn:hover {
