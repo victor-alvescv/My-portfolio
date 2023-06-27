@@ -26,6 +26,8 @@ function toggleContrast() {
   }
 }
 
+
+
 function contact(event) {
   event.preventDefault();
   const loading = document.querySelector(".modal__overlay--loading");
@@ -34,7 +36,7 @@ function contact(event) {
 
   emailjs
     .sendForm(
-      "service_ft79hpl",
+      "service_pvn936e",
       "template_zql1khp",
       event.target,
       "YIVHwcnxzWc5rEOtr"
