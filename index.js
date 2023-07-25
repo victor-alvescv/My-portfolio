@@ -114,3 +114,21 @@ function readLessTreact() {
   readmoretexttreact.style.display = 'none';
   readlessbtntreact.style.display = 'none';
 }
+
+function readMoreSummarist() {
+  let readmorebtnsummarist = document.querySelector('.readmore-btn-summarist')
+  let readmoretextsummarist = document.querySelector('.readmore-text-summarist')
+  let readlessbtnsummarist = document.querySelector('.readless-btn-summarist')
+  readmorebtnsummarist.style.display = 'none';
+  readmoretextsummarist.style.display = 'inline';
+  readlessbtnsummarist.style.display = 'inline';
+}
+
+function readLessSummarist() {
+  let readmorebtnsummarist = document.querySelector('.readmore-btn-summarist')
+  let readmoretextsummarist = document.querySelector('.readmore-text-summarist')
+  let readlessbtnsummarist = document.querySelector('.readless-btn-summarist')
+  readmorebtnsummarist.style.display = 'inline';
+  readmoretextsummarist.style.display = 'none';
+  readlessbtnsummarist.style.display = 'none';
+}
